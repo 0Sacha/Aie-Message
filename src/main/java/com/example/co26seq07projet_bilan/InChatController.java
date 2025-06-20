@@ -2,11 +2,14 @@ package com.example.co26seq07projet_bilan;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.layout.HBox;
+
+import java.io.IOException;
 
 public class InChatController {
 
@@ -17,7 +20,7 @@ public class InChatController {
     private Button accountButton;
 
     @FXML
-    private TextField inputInChatMessageTextField;
+    public TextField inputInChatMessageTextField;
 
     @FXML
     private HBox menuNavBarHbox;
@@ -34,8 +37,9 @@ public class InChatController {
     }
 
     @FXML
-    void onExitClickButton(ActionEvent event) {
-
+    void onExitClickButton(ActionEvent event) throws IOException {
+        Scene dataScene = HelloApplication.loadChatMenuScene();
+        HelloApplication.getInstance().getChangeStage().setScene(dataScene);
     }
 
     @FXML
@@ -45,7 +49,7 @@ public class InChatController {
 
     @FXML
     void onSendClickButton(ActionEvent event) {
-
+        inputInChatMessageTextField.getText();
     }
 
 }
