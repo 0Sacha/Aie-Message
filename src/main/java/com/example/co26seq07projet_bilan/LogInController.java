@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.InputMethodEvent;
-import javafx.scene.layout.HBox;
 
 public class LogInController {
 
@@ -14,12 +13,6 @@ public class LogInController {
 
     @FXML
     private TextField inputPseudoTextField;
-
-    @FXML
-    private HBox menuNavBarHbox;
-
-    @FXML
-    private Button modifyButton;
 
     @FXML
     private Button submitLogInButton;
@@ -31,11 +24,6 @@ public class LogInController {
 
     @FXML
     void onInputPseudoTextField(InputMethodEvent event) {
-
-    }
-
-    @FXML
-    void onModifyClickButton(ActionEvent event) {
 
     }
 
