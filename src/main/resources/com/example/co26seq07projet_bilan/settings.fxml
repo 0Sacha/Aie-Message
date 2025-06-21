@@ -146,6 +146,32 @@
                               <Insets bottom="23.0" left="23.0" right="23.0" top="23.0" />
                            </padding>
                         </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="173.0" prefHeight="112.0" prefWidth="334.0" style="-fx-spacing: 18px; -fx-background-color: red; -fx-border-radius: 10px; -fx-background-radius: 999px;">
+                           <children>
+                              <Button fx:id="toggleDarkLightModeButton1" mnemonicParsing="false" onAction="#onToggleDarkLightModeClickButton" prefHeight="48.0" prefWidth="48.0" style="-fx-background-radius: 999px; -fx-border-radius: 999px; -fx-background-color: #FFFFFF;" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                              <VBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="224.0" style="-fx-background-color: red;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Déconnexion">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bouton toggle" wrappingWidth="184.7655792236328">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="23.0" left="23.0" right="23.0" top="23.0" />
+                           </padding>
+                        </HBox>
                      </children>
                   </VBox>
                </children>

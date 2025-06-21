@@ -7,6 +7,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.sql.Connection;
+import java.util.ResourceBundle;
 
 public class HelloApplication extends Application {
 
@@ -17,6 +20,13 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         // Initialisation de la référence vers l'application
         application = this;
+        // Test de la connexion à la BDD
+        Connection conn = DatabaseConnector.getConnection();
+        if (conn != null) {
+            System.out.println("Connexion réussie !");
+        } else {
+            System.out.println("Échec de la connexion.");
+        }
         // Chargement de la Scene du premier écran
         Scene loginScene = loadLoginScene();
         // Mise en place et affichage de la Scene du premier écran dans la Stage de notre application

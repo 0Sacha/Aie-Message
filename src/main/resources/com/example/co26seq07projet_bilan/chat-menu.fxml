@@ -21,19 +21,11 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="accountButton1" mnemonicParsing="false" onAction="#onAccountClickButton" prefHeight="48.0" prefWidth="48.0" style="-fx-background-radius: 999px; -fx-border-radius: 999px; -fx-background-color: #FAFAFA;" text="A" textAlignment="CENTER">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Button>
+                  <Button fx:id="accountButton1" mnemonicParsing="false" onAction="#onAccountClickButton" prefHeight="48.0" prefWidth="48.0" style="-fx-background-radius: 999px; -fx-border-radius: 999px; -fx-background-color: #FAFAFA;" text="👤" textAlignment="CENTER" />
                </children>
             </HBox>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="554.0" prefWidth="402.0">
-         <children>
-            <VBox fx:id="messageMenuVbox" prefHeight="521.0" prefWidth="334.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 27px 27px 0 0; -fx-border-radius: 27px 27px 0 0;" />
-         </children>
-      </HBox>
+      <VBox fx:id="messageMenuVbox" alignment="TOP_LEFT" prefHeight="572.0" prefWidth="380.0" style="-fx-padding: 10;" />
    </children>
 </VBox>
